@@ -154,6 +154,11 @@ textarea {
         background: rgba(0, 0, 0, 0.8);
     }
 
+    .panel-top {
+        height: 16px;
+        background: url(../img/panel-top.jpg) repeat-x;
+    }
+
 
 
 
