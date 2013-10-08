@@ -93,13 +93,16 @@ textarea {
         background-image: url(../img/bg.jpg);
     }
 
-    /* BUTTONS
-    ========================================================================= */
-
-    .btn-open {
+    .center {
         position: absolute;
         top: 50%;
         left:50%;
+    }
+
+    /* BUTTONS
+    ========================================================================= */
+
+    .btn {
         margin-top: -148px;
         margin-left: -149px;
         width: 298px;
@@ -121,7 +124,7 @@ textarea {
         outline: none;
     }
 
-    .btn-open:hover {
+    .btn:hover {
         background: #f1f1f1;
         background: -moz-linear-gradient(top, #f1f1f1, #eaeaea);
         background: -webkit-gradient(top, #f1f1f1, #eaeaea);
@@ -132,7 +135,7 @@ textarea {
         color: #ffae00;
     }
 
-    .btn-open:focus {
+    .btn:focus {
         background: #d8d8d8;
         background: -moz-linear-gradient(top, #d8d8d8, #f1f1f1);
         background: -webkit-gradient(top, #d8d8d8, #f1f1f1);
@@ -146,11 +149,14 @@ textarea {
     .btn-round {
         display: block;
         position: relative;
-        top: -18px;
         width: 60px;
         height: 60px;
+        border-radius: 50%;
+    }
+
+    .btn-expand {
+        top: -18px;
         margin: 0 auto;
-        border-radius: 100% 100% 0 0;
         background: rgba(0, 0, 0, 0.75);
         background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.75) 30%, transparent 30%);
         background: -webkit-gradient(top, rgba(0, 0, 0, 0.75) 30%, transparent 30%);
@@ -160,12 +166,14 @@ textarea {
         background: linear-gradient(top, rgba(0, 0, 0, 0.75) 30%, transparent 30%);
     }
 
+    .btn-expand-top {
+        display: inline-block;
+        width: 56px;
+        height: 18px;
+    }
+
     .btn-nav {
-        display: block;
-        position: relative;
         top: 50%;
-        width: 60px;
-        height: 60px;
         border: 1px solid #51544e;
         border-radius: 50%;
         margin-top: -30px;
@@ -209,6 +217,7 @@ textarea {
 
     .panel-content {
         /*height: 292px;*/
+        margin: 0 40px;
         overflow-x: auto;
         white-space: nowrap;
     }
@@ -219,8 +228,9 @@ textarea {
     }
 
     .information,
-    .media-objects,
-    .links {
+    .videos,
+    .links,
+    .photos {
         display: inline-block;
         width: 340px;
         height: 200px;
@@ -228,20 +238,36 @@ textarea {
         margin: 10px;
     }
 
-    /*.arrow-down {
+    .arrow {
         position: absolute;
-        /*bottom: -20px; */
-        /*left: 390px;       */
-        /*display: block;
+        display: block;
         height: 0;
         width: 0;
-        border-bottom: 15px solid yellow;
-        border-left: 0 solid green;
-        border-right: 15px solid blue;
-        border-top: 15px solid red;
-        line-height: 0;
-        content: '';
-    }*/
+    }
+
+    .arrow-down {
+        top: 10px;
+        left: 24px;
+        border-top: 6px solid #c6db2e;
+        border-right: 7px solid transparent;
+        border-left: 7px solid transparent;
+    }
+
+    .arrow-left {
+        top: 23px;
+        left: 38px;
+        border-top: 7px solid transparent;
+        border-right: 6px solid #c6db2e;
+        border-bottom: 7px solid transparent;
+    }
+
+    .arrow-right {
+        top: 23px;
+        right: 38px;
+        border-top: 7px solid transparent;
+        border-left: 6px solid #c6db2e;
+        border-bottom: 7px solid transparent;
+    }
 
 
 
