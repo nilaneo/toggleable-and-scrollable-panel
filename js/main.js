@@ -1,1 +1,3 @@
-
+$(function() {
+	$('.j-photos').tinyscrollbar();
+});
