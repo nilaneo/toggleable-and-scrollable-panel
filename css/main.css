@@ -93,18 +93,18 @@ textarea {
         background-image: url(../img/bg.jpg);
     }
 
-    .center {
+    .btn-center {
         position: absolute;
         top: 50%;
         left:50%;
+        margin-top: -148px;
+        margin-left: -149px;
     }
 
     /* BUTTONS
     ========================================================================= */
 
     .btn {
-        margin-top: -148px;
-        margin-left: -149px;
         width: 298px;
         height: 52px;
         border: none;
@@ -155,11 +155,11 @@ textarea {
     }
 
     .btn-round:focus,
-    .btn-expand-top:focus {
+    .btn-round-half-top:focus {
         outline: none;
     }
 
-    .btn-expand {
+    .btn-round-half {
         top: -18px;
         margin: 0 auto;
         background: rgba(0, 0, 0, 0.75);
@@ -171,27 +171,30 @@ textarea {
         background: linear-gradient(top, rgba(0, 0, 0, 0.75) 30%, transparent 30%);
     }
 
-    .btn-expand-top {
+    .btn-round-half-top {
         display: inline-block;
         width: 56px;
         height: 18px;
     }
 
-    .btn-nav {
+    .btn-round-nav {
         top: 50%;
         border: 1px solid #51544e;
-        border-radius: 50%;
         margin-top: -30px;
         background-color: #242424;
     }
 
-    .btn-nav-left {
+    .btn-round-nav-left {
         left: -34px;
     }
 
-    .btn-nav-right {
+    .btn-round-nav-right {
         right: -12px;
     }
+
+    /*
+     * Arrow icons
+     */
 
     .arrow {
         position: absolute;
@@ -243,6 +246,11 @@ textarea {
         background: rgba(0, 0, 0, 0.8);
     }
 
+    .panel-top {
+        height: 16px;
+        background: url(../img/panel-top.jpg) repeat-x;
+    }
+
     .panel-left {
         float: left;
         width: 40px;
@@ -265,22 +273,14 @@ textarea {
         white-space: nowrap;
     }
 
-    .panel-top {
-        height: 16px;
-        background: url(../img/panel-top.jpg) repeat-x;
-    }
-
     .information,
     .videos,
     .links,
     .photos {
         display: inline-block;
-        /*float: left;*/
-        width: 340px;
         height: auto;
         white-space: normal;
         vertical-align: top;
-        /*background-color: red;*/
     }
 
     .title {
@@ -322,7 +322,6 @@ textarea {
 
     .videos {
         width: 388px;
-        margin-top: 0;
         margin-left: 60px;
     }
 
@@ -347,7 +346,6 @@ textarea {
 
    .links {
         width: 220px;
-        margin-top: 0;
         margin-left: 40px;
     }
 
@@ -373,7 +371,6 @@ textarea {
     .photos {
         width: 490px;
         height: 240px;
-        margin-top: 0;
         margin-left: 40px;
     }
 
