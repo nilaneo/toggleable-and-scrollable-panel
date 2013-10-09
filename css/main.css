@@ -154,6 +154,11 @@ textarea {
         border-radius: 50%;
     }
 
+    .btn-round:focus,
+    .btn-expand-top:focus {
+        outline: none;
+    }
+
     .btn-expand {
         top: -18px;
         margin: 0 auto;
